@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel = "stylesheet"
+          type = "text/css"
+          href = "style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <section>
+        <svg>
+            <filter id="liquid">
+                <feGaussianBlur in="sourceGraphic"
+                                stdDeviation="12"/>
+                <feColorMatrix values="
+                        1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 30 -15
+                    "></feColorMatrix>
+            </filter>
+        </svg>
+        <div class="loader">
+            <span style="--i:0"></span>
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+            <span style="--i:4"></span>
+            <span style="--i:5"></span>
+            <span style="--i:6"></span>
+            <span class="translate" style="--j:1"></span>
+            <span class="translate" style="--j:2"></span>
+            <span class="translate" style="--j:3"></span>
+            <span class="translate" style="--j:4"></span>
+            <span class="translate" style="--j:5"></span>
+        </div>
+    </section>
+</body>
+</html>
